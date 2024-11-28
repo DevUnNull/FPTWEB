@@ -1,0 +1,39 @@
+body{
+    background-image: url(/HocHTML/image/DSC02104_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center ;
+    background-size: cover;
+}
+.table-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Viền ngoài của bảng */
+    border-radius: 8px; /* Bo góc bảng */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu bảng rộng */
+  }
+
+  table {
+    width: 100%; /* Chiếm 100% chiều rộng của container */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+    font-family: Arial, sans-serif; /* Font cho bảng */
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Viền cho mỗi ô */
+  }
+
+  th {
+    background-color: #f4f4f4; /* Màu nền cho tiêu đề cột */
+    font-weight: bold; /* In đậm tiêu đề */
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Màu nền cho các hàng lẻ */
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover vào một hàng */
+  }

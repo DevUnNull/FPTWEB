@@ -1,0 +1,208 @@
+/*heaer*/
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#logo-- img{
+    width: 200px;
+}
+.menu{
+    display: flex; /* Kích hoạt flexbox */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.menuText h2{
+    text-align:right;
+    
+}
+.indam{
+        text-decoration: underline;
+    text-decoration-color: rgb(12, 192, 162) ;
+    text-decoration-thickness: 7px;
+}
+.menuText p{
+    letter-spacing: 1px;
+    font-style: sans-serif;
+}
+.menuText{
+    background-color: grey;
+    padding-top: 100px;
+    padding-bottom: 100px; ;
+}
+.menuImage img{
+    flex: 1; /* Tự động chiếm 50% không gian */
+    background-color: #2a9d8f; /* Nền cho phần bên phải */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn giữa nội dung */
+}
+.seller{
+    display: flex;
+    justify-content: space-between;
+}
+.bestSeller{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.bestSeller img{
+    height: 200px;
+    width: 180px;
+    padding-left:40px ;
+}
+.seller h1{
+    color: aquamarine;
+    text-align: center;
+    font-size: 20px;
+}
+.buynow {
+    background-color: #ff9100; /* Màu nền */
+    color: white;               /* Màu chữ */
+    border: none;               /* Không viền */
+    padding: 10px 20px;         /* Khoảng cách giữa văn bản và viền */
+    text-align: center;         /* Căn giữa chữ */
+    text-decoration: none;      /* Không gạch chân */
+    display: inline-block;      /* Hiển thị như một phần tử nội tuyến */
+    font-size: 10px;            /* Kích thước chữ */
+    cursor: pointer;           /* Con trỏ thay đổi khi di chuột vào nút */
+    border-radius: 20px;         /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  }
+  .giaCu{
+    color: grey;
+  }
+  .price{
+    color: red;
+  }
+  .bestSellerImagee{
+    background-color: rgb(168, 158, 158);
+  }
+
+  .table{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Viền ngoài của bảng */
+    border-radius: 8px; /* Bo góc bảng */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu bảng rộng */
+  }
+
+  table {
+    width: 100%; /* Chiếm 100% chiều rộng của container */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+    font-family: Arial, sans-serif; /* Font cho bảng */
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Viền cho mỗi ô */
+  }
+
+  th {
+    background-color: #61b41d; /* Màu nền cho tiêu đề cột */
+    font-weight: bold; /* In đậm tiêu đề */
+  }
+
+  .consultatiion h1{
+    color: #2a9d8f;
+    text-align: center;
+  }
+  .consultatiionn{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .consultatiionn > div:nth-child(2) {
+    margin-left: 20px; /* Tạo khoảng cách 20px giữa phần tử thứ 1 và thứ 2 */
+  }
+
+.endd p{
+    text-align: center;
+}
+
+/* Style cho container của form */
+.endd {
+    width: 400px; /* Chiều rộng của form */
+    margin: 0 auto; /* Căn giữa form trên trang */
+    padding: 20px; /* Khoảng cách bên trong form */
+    background-color: #f4f4f4; /* Màu nền của form */
+    border-radius: 8px; /* Bo góc cho form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho form */
+}
+
+/* Style cho các phần tử <p> trong form */
+.endd p {
+    text-align: center; /* Căn giữa nội dung của các đoạn văn */
+    font-size: 16px; /* Kích thước font chữ */
+    color: #333; /* Màu sắc của chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới các đoạn văn */
+}
+
+/* Container chứa các trường input trên cùng một dòng */
+.form-row {
+    display: flex; /* Dùng Flexbox để sắp xếp các phần tử theo hàng ngang */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các trường */
+    gap: 20px; /* Khoảng cách giữa các trường */
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi dòng trường */
+}
+
+/* Style cho mỗi trường trong form (Full Name, Phone, Address) */
+.form-group {
+    flex: 1; /* Chia đều không gian giữa các trường */
+}
+
+/* Style cho label của mỗi trường input */
+.form-group label {
+    display: block; /* Đảm bảo label chiếm cả dòng */
+    font-size: 14px; /* Kích thước chữ cho label */
+    margin-bottom: 5px; /* Khoảng cách giữa label và input */
+    color: #333; /* Màu chữ của label */
+}
+
+/* Style cho các ô input (Full Name, Phone, Address) */
+.form-group input {
+    width: 100%; /* Đảm bảo các input chiếm hết không gian của .form-group */
+    padding: 8px; /* Khoảng cách bên trong ô input */
+    font-size: 14px; /* Kích thước chữ trong input */
+    border-radius: 4px; /* Bo góc cho các ô input */
+    border: 1px solid #ddd; /* Đường viền mỏng cho input */
+    margin-top: 5px; /* Khoảng cách trên các ô input */
+}
+
+/* Style cho phần tử chứa các nút Submit và Reset */
+.form-actions {
+    text-align: center; /* Căn giữa các nút */
+}
+
+/* Style cho các nút button (Submit và Reset) */
+.button {
+    padding: 15px 30px; /* Tăng kích thước padding để làm nút to hơn */
+    font-size: 18px; /* Tăng kích thước chữ trong nút */
+    margin: 10px; /* Khoảng cách giữa các nút */
+    border: none; /* Không có viền */
+    border-radius: 6px; /* Bo góc lớn hơn */
+    cursor: pointer; /* Đổi con trỏ chuột thành pointer khi hover */
+    background-color: #4CAF50; /* Màu nền cho nút Submit */
+    color: white; /* Màu chữ trong nút */
+    
+}
+
+/* Hiệu ứng hover cho nút Submit */
+.button:hover {
+    background-color: #45a049; /* Thay đổi màu nền khi di chuột qua nút */
+}
+
+/* Style riêng cho nút Reset (Cancel) */
+input[type="reset"] {
+    background-color: #f44336; /* Màu nền cho nút Cancel */
+}
+
+/* Hiệu ứng hover cho nút Reset */
+input[type="reset"]:hover {
+    background-color: #e53935; /* Thay đổi màu nền khi di chuột qua nút Reset */
+}

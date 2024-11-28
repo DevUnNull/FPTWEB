@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Huong dan lam html" >
+    <meta name="author" content="Hai" >
+    <meta http-equiv="refresh" content="200"> 
+</head>
+<body>
+    // thẻ h1 là thẻ tiêu đề 
+    <h1>Đây là tiêu đề </h1>
+    // thẻ h2 là chữ nhỏ hơn nữa số càng lớn thì chữ càng nhỏ
+    <h2>Đây là tiêu đề nhưng nhỏ hơn</h2>
+
+    // thẻ p là thẻ đoạn văn 
+    <p> day la the de viet 1 doan van va co the dung br <br> de xuong dong cho doan van</p>
+    // the hr de tao ra 1 duong duong thang ket bai 
+    <hr>
+
+
+    // các loại định dạng văn bản trong html
+    <P>Đây là văn bản bình thường</p>
+        <p>Đây là văn bản <b>in ậm</b></p>
+        <p>Đây là văn bản <i>in nghiêng</i></p>
+        <p>Đây là văn bản <big>lớn</big></p>
+        <p>Đây là văn bản <small>nhỏ</small></p>
+        <P>Đây là văn bản <sub>subscript</sub></p>
+        <P>Đây là văn bản <ins>inserted</ins></p>
+        <p>Đây là văn bản <del>deleted</del></p>
+        <P>Đây là văn bản <mark>marked</mark></p>
+
+    <hr>
+    // thẻ siêu liên kết <br>
+    // lien het voi link <br>
+    <a href="https://www.youtube.com/watch?v=seR5JFRdx5A&list=UULPLKA-qhSIPwcy4teN_u0oVg" target="_blank">
+        Ấn vào để xem cách dùng html <br>
+    </a>
+    // lien ket voi html khac <br>
+    <a href="page2.html">
+        Ấn để sang page2
+    </a>
+    <hr>
+    // the chèn ảnh
+    <a href="/page2.html" >
+        <img src="/image/DSC02104_1.jpg" height="300px" alt="Anh Gia Dinh" title="Anh Gia Dinh">
+    </a>
+    // <hr>
+    // the chen am thanh <br>
+    // loop nó sẽ tự chơi lại nhạc khi hết
+    // autoplay khi vào web nó sẽ tự bật nhạc 
+    // muted là khi vào web nó tự tắt tiếng của sound
+    <audio loop autoplay controls muted>
+        <source src="/audio/relaxing-guitar-loop-v5-245859.mp3"  >
+    </audio>
+
+    <hr>
+    // chen the Video
+    <video controls src="/Video/1682152313837.MP4" height="300px"></video>
+
+    <hr>
+    // cac loai list
+    <h2>Unordered list </h2>
+    <ul>
+        <li>Hoa qua</li>
+        <li>Thit</li>
+        <li>Rau</li>
+    </ul>
+    // nếu muốn biết trong thịt có các loại nào thì mình dùng nested list là lồng list
+    <h2>nested list </h2>
+    <ul>
+        <li>
+            Hoa qua
+            <ul>
+                <li>qua cam</li>
+                <li>qua buoi</li>
+            </ul>
+        </li>
+        <li>
+            Thit
+            <ul>
+                <li>thit lon</li>
+                <li>thit trau</li>
+                <li>thit ga</li>
+            </ul>
+        </li>
+        <li>
+            Rau
+            <ul>
+                <li>rau ma</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <h2>Ordered list</h2>
+    <ol type="1">
+        <li>Hoa qua</li>
+        <li>Thit</li>
+        <li>Rau</li>
+    </ol>
+
+    <h2>Description List</h2>
+    <dl>
+        <dt>Mon Ngon</dt>
+        <dd>pizza, pho , hamburger...</dd>
+    </dl>
+    <hr>
+    // chen the table
+    <table bgcolor="black">
+        <tr style="background-color: aqua; color: black;" >
+            <th>Stt</th>
+            <th>Ten</th>
+            <th>Nganh Hoc</th>
+        </tr>
+        <tr style="color: rgb(6, 6, 6); background-color: aqua;">
+            <th>01</th>
+            <th>Hai</th>
+            <th>Cntt</th>
+        </tr>
+
+    </table>
+    <hr>
+    div gom các phần tử thành 1 khối
+    <p><div>Lorem ipsum dolor sit amet consectetur</div> , adipisicing elit. Facere laudantium itaque deleniti laboriosam, veniam eos blanditiis dolore,</p>
+    span gom các phần tử thành 1 dòng thường dùng để in dậm 1  đoạn trong bài văn
+    <p><span style="color: pink;" >ipsum dolor sit amet consectetur</span> , adipisicing elit. Facere laudantium itaque deleniti laboriosam, veniam eos blanditiis dolore,</p>
+    <hr>
+    //  thẻ iframe dùng để nhúng 1 nội dung nào. đó vào trang web hiện tại
+    <iframe width="100%" src="https://vi.wikipedia.org/wiki/Nguyễn_Quang_Hải_(sinh_1997)"></iframe>
+    <hr>
+    // cach tao nut button
+    <button style="background-color: blueviolet;color: aliceblue; border-radius: 5px;" >
+        Click me
+    </button>
+    <hr>
+    // cach dung form
+
+    <form method="post" action="">
+        <h1>Dang nhap</h1>
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" ><br>
+        </div>
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" ><br>
+        </div>
+        <div>
+            <label for="pword">pass word:</label>
+            <input type="password" id="pword" name="pword" ><br>
+        </div>
+        <div>
+            <label for="date">date:</label>
+            <input type="date" id="date" name="date" ><br>
+        </div>
+        <div>
+            <label for="inumber">Phone number:</label>
+            <input type="number" id="inumber" name="inumber" ><br>
+        </div>
+        <div>
+            Chuyen Nganh:
+            <select name="major" >
+                <option value="SE" >SE</option>
+                <option value="HE">HE</option>
+                <option value="FE">FE</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" name="role" value="Student">Student
+            <input type="radio" name="role" value="Teacher">Teacher
+            <input type="radio" name="role" value="Staff">Staff
+        </div>
+
+        <input type="submit" >
+        <input type="reset" >
+    </form>
+</body>
+</html>

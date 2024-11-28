@@ -1,0 +1,609 @@
+p0{
+    background-color: pink;color: rgb(245, 0, 0);
+}
+.le{
+    background-color: aqua;color: brown;
+}
+.chan{
+    background-color: rgb(255, 0, 0);
+}
+#dongCuoi{
+    background-color:darkslategrey ;
+}
+p2{
+    /*các phông chữ trong css family kiểu chữ , size độ to của chữ , style kiểu nghiêng hay gì đó , weight độ xa nhau của chữ , underline gạch dưới chữ*/
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+    /*---------------------------------------------*/
+    /*border lề , style lề kiều gì , width độ to của lề  , color màu của lề , radius là bo tròn bao nhiêu , padding độ xa của chữ với lề*/
+    /*và chúng ta cũng có thể điều tính từng góc khác nhau của lề có top bot left right*/
+    
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    border-top-color: pink;
+    border-right-width: 100px;
+}
+
+/*chỉnh backgroud*/
+/*linear-gradient giups màu trông đpej hơn , background-repeat không cho màu lặp lại nữa , background-attachment kéo màu full màn hình */
+body{
+    background: linear-gradient( skyblue,red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*cach su dung margin và padding*/
+/*margin la khoảng cách xung quanh của 1 element
+  padding là khoảng cách của phần tử bên trong element*/
+#box1{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    background-color: yellow;
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    background-color: rgb(195, 0, 255);
+    margin-top: 10px;
+    padding: 10px;
+}
+/*cach su dung position*/
+#box3{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: fixed;
+}
+
+/*cach su dung transfrom*/
+/*trong matrix bao gom tat ca 
+thu tu la : scaleX , skewY , skewX , translateX,translateY
+*/
+#box4{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(12, 245, 74);
+
+    transform: translateX(100px) rotate(45deg) scale(2) skew(0deg,45deg);
+    transform: matrix(0,0,0,0,0,0);
+
+}
+/*cach su dung lop gia*/
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: green;
+}
+
+/*Responsive no hien thi tot tren nhieu thiet bi khac nhau*/ 
+@media all and (max-width: 768px){
+    h1{
+        color: red;
+    }
+}
+
+/*---------------------------*/
+p {
+    font-family: Arial, sans-serif; /* Chọn font chữ */
+    font-size: 16px; /* Chỉnh kích thước chữ */
+    font-weight: bold; /* Chỉnh độ đậm chữ */
+    font-style: italic; /* Chỉnh kiểu chữ nghiêng */
+
+  }
+  
+  p {
+    color: red; /* Chỉnh màu chữ */
+    text-align: center; /* Căn giữa văn bản */
+    text-decoration: underline; /* Gạch chân chữ */
+    text-align:right; /*căn chỉnh theo hướng mình muốn*/
+    letter-spacing: 2px; /*khoảng cách giữa các chữ*/
+    text-decoration: underline;/*gạch ngang chữ*/ text-decoration-color: red ; /*thay đổi màu dấu gạch*/ text-decoration-thickness: 7px; /*tăng độ to cho dấu gạch*/
+  } 
+  
+  .box {
+    margin: 20px; /* Khoảng cách ngoài phần tử */
+    padding: 15px; /* Khoảng cách bên trong phần tử */
+  }
+  
+  body {
+    background-color: #f0f0f0; /* Màu nền */
+    background-image: url('background.jpg'); /* Hình nền */
+    background-size: cover; /* Kích thước hình nền */
+    background-position: center; /* Vị trí hình nền */
+  }
+  .box {
+    width: 300px; /* Chiều rộng của phần tử */
+    height: 200px; /* Chiều cao của phần tử */
+    border: 1px solid black; /* Đường viền */
+  }
+  
+  .box {
+    border: 2px solid #000; /* Đặt đường viền cho phần tử */
+    border-radius: 10px; /* Bo góc */
+  }
+
+  .positioned-element {
+    position: relative; /* Đặt vị trí tương đối */
+    top: 20px; /* Di chuyển xuống dưới 20px */
+    left: 50px; /* Di chuyển sang phải 50px */
+  }
+  
+  .fixed-element {
+    position: fixed; /* Vị trí cố định */
+    top: 0; /* Cố định ở phía trên cùng */
+    left: 0; /* Cố định ở bên trái */
+  }
+  
+  .hidden {
+    display: none; /* Ẩn phần tử */
+  }
+  
+  .block {
+    display: block; /* Đổi phần tử thành block */
+  }
+  
+  .inline {
+    display: inline; /* Đổi phần tử thành inline */
+  }
+  
+  .visible {
+    visibility: visible; /* Hiển thị phần tử */
+  }
+  
+  .hidden-visibility {
+    visibility: hidden; /* Ẩn phần tử nhưng vẫn chiếm không gian */
+  }
+  
+  .container {
+    display: flex; /* Kích hoạt flexbox */
+    justify-content: space-between; /* Căn chỉnh các phần tử theo chiều ngang */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  }
+  
+  .container {
+    display: grid; /* Kích hoạt grid */
+    grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột đều */
+    gap: 10px; /* Khoảng cách giữa các cột */
+  }
+
+  /* Chỉ áp dụng khi màn hình có chiều rộng tối đa là 600px */
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Chuyển các phần tử trong container thành cột */
+    }
+  }
+  
+  button {
+    background-color: #4CAF50; /* Màu nền ban đầu */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Xóa đường viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ thay đổi khi hover */
+    transition: background-color 0.3s ease; /* Chuyển màu nền mượt mà */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+  }
+  
+/*
+Tóm tắt:
+Các cú pháp cơ bản trong CSS bao gồm:
+
+CSS selector: Lựa chọn các phần tử HTML cần thay đổi.
+CSS properties: Các thuộc tính CSS để thay đổi phong cách của các phần tử, như color, font-size, background-color, v.v.
+Layout và vị trí: Dùng display, position, margin, padding để chỉnh bố cục và vị trí.
+Media Queries: Để làm thiết kế responsive.
+CSS rất linh hoạt và bạn có thể kết hợp nhiều thuộc tính với nhau để tạo ra các giao diện web đẹp mắt và dễ sử dụng.  */
+
+
+/*tạo ra nút mua hàng*/
+.buynow {
+    background-color: #ff9100; /* Màu nền */
+    color: white;               /* Màu chữ */
+    border: none;               /* Không viền */
+    padding: 10px 20px;         /* Khoảng cách giữa văn bản và viền */
+    text-align: center;         /* Căn giữa chữ */
+    text-decoration: none;      /* Không gạch chân */
+    display: inline-block;      /* Hiển thị như một phần tử nội tuyến */
+    font-size: 10px;            /* Kích thước chữ */
+    cursor: pointer;           /* Con trỏ thay đổi khi di chuột vào nút */
+    border-radius: 20px;         /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  }
+
+
+
+
+
+
+  /*cách tạo bảng*/
+  .table-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Viền ngoài của bảng */
+    border-radius: 8px; /* Bo góc bảng */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu bảng rộng */
+  }
+
+  table {
+    width: 100%; /* Chiếm 100% chiều rộng của container */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+    font-family: Arial, sans-serif; /* Font cho bảng */
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Viền cho mỗi ô */
+  }
+
+  th {
+    background-color: #f4f4f4; /* Màu nền cho tiêu đề cột */
+    font-weight: bold; /* In đậm tiêu đề */
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Màu nền cho các hàng lẻ */
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover vào một hàng */
+  }
+
+
+  
+
+
+  /*phần tử thứ 2 sẽ cách phần tử thứ 1 5px*/
+  .consultatiionn > div:nth-child(2) {
+    margin-left: 20px; /* Tạo khoảng cách 20px giữa phần tử thứ 1 và thứ 2 */
+  }
+
+
+
+
+
+  /*bảng đăng nhập*/
+  /* Style cho container của form */
+.endd {
+    width: 400px; /* Chiều rộng của form */
+    margin: 0 auto; /* Căn giữa form trên trang */
+    padding: 20px; /* Khoảng cách bên trong form */
+    background-color: #f4f4f4; /* Màu nền của form */
+    border-radius: 8px; /* Bo góc cho form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho form */
+}
+
+/* Style cho các phần tử <p> trong form */
+.endd p {
+    text-align: center; /* Căn giữa nội dung của các đoạn văn */
+    font-size: 16px; /* Kích thước font chữ */
+    color: #333; /* Màu sắc của chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới các đoạn văn */
+}
+
+/* Container chứa các trường input trên cùng một dòng */
+.form-row {
+    display: flex; /* Dùng Flexbox để sắp xếp các phần tử theo hàng ngang */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các trường */
+    gap: 20px; /* Khoảng cách giữa các trường */
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi dòng trường */
+}
+
+/* Style cho mỗi trường trong form (Full Name, Phone, Address) */
+.form-group {
+    flex: 1; /* Chia đều không gian giữa các trường */
+}
+
+/* Style cho label của mỗi trường input */
+.form-group label {
+    display: block; /* Đảm bảo label chiếm cả dòng */
+    font-size: 14px; /* Kích thước chữ cho label */
+    margin-bottom: 5px; /* Khoảng cách giữa label và input */
+    color: #333; /* Màu chữ của label */
+}
+
+/* Style cho các ô input (Full Name, Phone, Address) */
+.form-group input {
+    width: 100%; /* Đảm bảo các input chiếm hết không gian của .form-group */
+    padding: 8px; /* Khoảng cách bên trong ô input */
+    font-size: 14px; /* Kích thước chữ trong input */
+    border-radius: 4px; /* Bo góc cho các ô input */
+    border: 1px solid #ddd; /* Đường viền mỏng cho input */
+    margin-top: 5px; /* Khoảng cách trên các ô input */
+}
+
+/* Style cho phần tử chứa các nút Submit và Reset */
+.form-actions {
+    text-align: center; /* Căn giữa các nút */
+}
+
+/* Style cho các nút button (Submit và Reset) */
+.button {
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 14px; /* Kích thước chữ trong nút */
+    margin: 5px; /* Khoảng cách giữa các nút */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Bo góc cho nút */
+    cursor: pointer; /* Đổi con trỏ chuột thành pointer khi hover */
+    background-color: #4CAF50; /* Màu nền cho nút Submit */
+    color: white; /* Màu chữ trong nút */
+}
+
+/* Hiệu ứng hover cho nút Submit */
+.button:hover {
+    background-color: #45a049; /* Thay đổi màu nền khi di chuột qua nút */
+}
+
+/* Style riêng cho nút Reset (Cancel) */
+input[type="reset"] {
+    background-color: #f44336; /* Màu nền cho nút Cancel */
+}
+
+/* Hiệu ứng hover cho nút Reset */
+input[type="reset"]:hover {
+    background-color: #e53935; /* Thay đổi màu nền khi di chuột qua nút Reset */
+}
+
+
+
+
+/*cách sử dụng flex trong css
+các phần trong bài thi 
+1 header
+2 navbar
+
+----------------------------
+h1{
+    color
+    text-align:center;
+}
+---------------------------
+1
+display: flex;
+justify-content:....; theo chiều ngang
+align-items:....; theo chiều dọc
+
+1 flex-start tất cả dồn về bên trái 
+2 center tất cả vào giữa
+3 flex-end tất cả dồn về bên phải
+4 space-between chia đều ra sát tường
+5 space-around chia đều ra cách tường 1 khoảng nhưng các khoảng ở giữa gáp 2 lần 2 bên dìa
+6 space-evenly chia đều nhau luôn
+
+
+----------------------------
+cách dùng cho logo,text cách dìa bao xa
+mình dùng margin
+
+------------------------------------
+2 lưu lý khi làm menu (navbar)
+luôn kéo nó lên 100%
+
+width:100%;
+display:flex;
+justìy-content:center;
+------------------------------------
+cách sử dụng bootstrap
+có nghĩa là grid system : nó sẽ chia làm 12 cột chúng ta có thể sử dụng những từ khóa col-... ,row...
+
+*/
+
+
+
+
+
+/*------------------------------------------------------------*/
+sự khác nhau của bootstap và css 
+
+
+1. Grid Layout
+CSS Thuần Túy:
+/* Container để chứa các cột */
+.container {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+}
+
+/* Định dạng các cột */
+.column {
+    flex: 1 1 33.33%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+HTML :
+<div class="container">
+    <div class="column">Cột 1</div>
+    <div class="column">Cột 2</div>
+    <div class="column">Cột 3</div>
+</div>
+-----------
+Bootstrap:
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">Cột 1</div>
+        <div class="col-md-4">Cột 2</div>
+        <div class="col-md-4">Cột 3</div>
+    </div>
+</div>
+
+
+
+
+------------------------------------------------------------------------------------------
+2. Căn giữa các phần tử (Aligning Items)
+CSS Thuần Túy:
+.center-container {
+    display: flex;                 /* Sử dụng Flexbox */
+    justify-content: center;       /* Căn giữa theo chiều ngang */
+    align-items: center;           /* Căn giữa theo chiều dọc */
+    height: 100vh;                 /* Chiều cao bằng chiều cao của màn hình */
+}
+HTML:
+<div class="center-container">
+    <button>Click me</button>
+</div>
+-----------
+Bootstrap:
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <button>Click me</button>
+</div>
+
+------------------------------------------------------------------------------------------
+3. Các Nút Button
+CSS Thuần Túy:
+/* Định dạng nút cơ bản */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Nút primary */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hiệu ứng hover cho nút primary */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Nút secondary */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Hiệu ứng hover cho nút secondary */
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+HTML:
+<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-secondary">Secondary Button</button>
+
+-----------
+Bootstrap:
+<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-secondary">Secondary Button</button>
+------------------------------------------------------------------------------------------
+4. Layout Responsive
+CSS Thuần Túy:
+/* Container với Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Các cột mặc định chiếm 33.33% chiều rộng */
+.column {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Khi màn hình nhỏ hơn 768px, các cột chiếm 100% chiều rộng */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
+
+HTML:
+<div class="container">
+    <div class="column">Cột 1</div>
+    <div class="column">Cột 2</div>
+    <div class="column">Cột 3</div>
+</div>
+
+-----------
+Bootstrap:
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">Cột 1</div>
+        <div class="col-md-4">Cột 2</div>
+        <div class="col-md-4">Cột 3</div>
+    </div>
+</div>
+
+------------------------------------------------------------------------------------------
+5. Navbar (Thanh điều hướng)
+CSS Thuần Túy:
+/* Định dạng navbar với Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+/* Định dạng các liên kết trong navbar */
+.navbar .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Hiệu ứng hover cho liên kết */
+.navbar .nav-link:hover {
+    color: #007bff;
+}
+
+/* Ẩn menu trên màn hình nhỏ */
+.navbar-toggler {
+    display: none;
+}
+
+/* Định dạng cho màn hình nhỏ (mobile) */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+HTML:
+<nav class="navbar">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler">☰</button>
+    <div class="navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        </ul>
+    </div>
+</nav>
+
+-----------
+Bootstrap:
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler

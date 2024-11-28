@@ -1,0 +1,250 @@
+/*đưa các phần tử về 1 hàng*/
+.header {
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Cách đều các phần tử */
+    padding: 10px 20px; /* Khoảng cách trong header */
+    
+  }
+/*làm cho logo nhỏ lại*/
+.header img {
+    width: 60px;
+    height: auto; /* Để giữ tỷ lệ hình ảnh */
+}
+
+/*dàn các dòng về cùng 1 hàng*/
+.header-text ul {
+    display: flex; /* Kích hoạt Flexbox */
+    list-style: none; /* Xóa bullet của danh sách */
+    margin: 0; /* Xóa margin mặc định */
+    padding: 0; /* Xóa padding mặc định */
+    justify-content: center; /* Căn giữa các mục trên một hàng */
+    gap: 20px; /* Tạo khoảng cách giữa các mục */
+}
+
+.header-text ul li a {
+    text-decoration: none; /* Xóa gạch chân liên kết */
+    color: #0055ff; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+}
+
+.header-text ul li a:hover {
+    color: #007BFF; /* Màu khi hover */
+}
+/*đổi màu nút*/
+button {
+    background-color: #000; /* Nền đen */
+    color: #fff; /* Chữ trắng */
+}
+
+
+/*gop lai 1 hang*/
+.content{
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Cách đều các phần tử */
+    padding: 10px 20px; /* Khoảng cách trong header */
+}
+/*thu nho hinh*/
+.container-image img{
+    height: 550px;
+    width: auto;
+}
+/*thu nho và về cùng 1 hàng*/
+.content1 {
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: flex-start; /* Căn các phần tử theo đỉnh */
+    gap: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 100%; /* Chiều rộng tối đa cụm */
+    max-width: 400px; /* Giới hạn chiều rộng cụm */
+    padding: 10px; /* Khoảng cách bên trong cụm */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Hình ảnh */
+.content1 img {
+    width: 150px; /* Chiều rộng cố định của hình ảnh */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    border-radius: 5px; /* Bo tròn góc hình ảnh */
+}
+
+/* Văn bản */
+.content1 div {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    text-align: justify; /* Dãn đều chữ trong vùng văn bản */
+}
+
+.content1 p {
+    margin: 5px 0; /* Thu nhỏ khoảng cách giữa các đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    line-height: 1.6; /* Tăng chiều cao dòng để dễ đọc */
+}
+
+/**/
+.content2 {
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: flex-start; /* Căn các phần tử theo đỉnh */
+    gap: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 100%; /* Chiều rộng tối đa cụm */
+    max-width: 400px; /* Giới hạn chiều rộng cụm */
+    padding: 10px; /* Khoảng cách bên trong cụm */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Hình ảnh */
+.content2 img {
+    width: 150px; /* Chiều rộng cố định của hình ảnh */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    border-radius: 5px; /* Bo tròn góc hình ảnh */
+}
+
+/* Văn bản */
+.content2 div {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    text-align: justify; /* Dãn đều chữ trong vùng văn bản */
+}
+
+.content2 p {
+    margin: 5px 0; /* Thu nhỏ khoảng cách giữa các đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    line-height: 1.6; /* Tăng chiều cao dòng để dễ đọc */
+}
+/**/
+.content3 {
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: flex-start; /* Căn các phần tử theo đỉnh */
+    gap: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 100%; /* Chiều rộng tối đa cụm */
+    max-width: 400px; /* Giới hạn chiều rộng cụm */
+    padding: 10px; /* Khoảng cách bên trong cụm */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Hình ảnh */
+.content3 img {
+    width: 150px; /* Chiều rộng cố định của hình ảnh */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    border-radius: 5px; /* Bo tròn góc hình ảnh */
+}
+
+/* Văn bản */
+.content3 div {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    text-align: justify; /* Dãn đều chữ trong vùng văn bản */
+}
+
+.content3 p {
+    margin: 5px 0; /* Thu nhỏ khoảng cách giữa các đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    line-height: 1.6; /* Tăng chiều cao dòng để dễ đọc */
+}
+/**/
+.content4 {
+    display: flex; /* Kích hoạt Flexbox */
+    align-items: flex-start; /* Căn các phần tử theo đỉnh */
+    gap: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 100%; /* Chiều rộng tối đa cụm */
+    max-width: 400px; /* Giới hạn chiều rộng cụm */
+    padding: 10px; /* Khoảng cách bên trong cụm */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Hình ảnh */
+.content4 img {
+    width: 150px; /* Chiều rộng cố định của hình ảnh */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    border-radius: 5px; /* Bo tròn góc hình ảnh */
+}
+
+/* Văn bản */
+.content4 div {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    text-align: justify; /* Dãn đều chữ trong vùng văn bản */
+}
+
+.content4 p {
+    margin: 5px 0; /* Thu nhỏ khoảng cách giữa các đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    line-height: 1.6; /* Tăng chiều cao dòng để dễ đọc */
+}
+
+/*cach căn chỉnh chữ ở giưã màn hình*/
+.content-booking{
+    text-align: center;
+    color: blue;
+}
+.content-hotel {
+    display: flex;  /* Chúng ta sử dụng Flexbox để căn chỉnh các phần tử theo dạng cột */
+    align-items: flex-start; /* Căn chỉnh theo chiều dọc, nếu cần chỉnh theo chiều ngang thì sẽ cần thêm justify-content */
+}
+  .content-hotel > div {
+    margin: 10px; /* Thêm margin cho các phần tử con */
+  }
+  
+  img {
+    width: 100%; /* Đảm bảo hình ảnh sẽ có kích thước phù hợp */
+    height: auto;
+  }
+  
+  .content-booking-information{
+    background-color: #807e7e;
+  }
+  
+  .feedback h2{
+    text-align: center;
+    color:  blue;
+    font-size: 40px;
+  }
+  
+  .feedbackNguoi{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .feedbackNguoi img{
+    width: 300px;
+    height: 300px;
+    border-radius: 180px;
+  }
+  #sao img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+  }
+  .footerEnd{
+    color: white;
+    background-color: blue;
+    display:flex;
+    align-items: center;
+    gap: 100px; /* Khoảng cách giữa các cột */
+  }
+  .feedback1{
+    position: relative; /* Đặt vị trí tương đối */
+    left: 250px; /* Di chuyển sang phải 50px */
+  }
+  .feedback2{
+    position: relative; /* Đặt vị trí tương đối */
+    left: 450px; /* Di chuyển sang phải 50px */
+  }
+  .footerEnd h5{
+    position: relative; /* Đặt vị trí tương đối */
+    top: 50px; /* Di chuyển sang phải 50px */
+    left: -80px;
+  }

@@ -1,0 +1,29 @@
+.monan2 img{
+    width: 230px;
+}
+.monan3 img{
+    width: 230px;
+}
+.monan4 img{
+    width: 230px;
+}
+h2{
+    font-size: 100%;
+    text-align: center;
+    color: rgb(255, 162, 0);
+}
+.monan{
+    margin-top: 15px;
+}
+.KhuyenMai {
+    background-color: #ff9100; /* Màu nền */
+    border: none;               /* Không viền */
+    padding: 10px 20px;         /* Khoảng cách giữa văn bản và viền */
+    text-align: center;         /* Căn giữa chữ */
+    text-decoration: none;      /* Không gạch chân */
+    display: inline-block;      /* Hiển thị như một phần tử nội tuyến */
+    font-size: 13px;            /* Kích thước chữ */
+    cursor: pointer;           /* Con trỏ thay đổi khi di chuột vào nút */
+    border-radius: 10px;         /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  }
