@@ -1,0 +1,142 @@
+h3{
+    color: blue;
+}
+h1{
+    color: aqua;
+}
+/* Container để chứa các cột */
+.container {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+    border: 3px solid #ddd;
+    align-items: center;
+}
+
+.container img{
+    width: auto;
+}
+
+/* Định dạng các cột */
+.column {
+    flex: 1 1 33.33%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+.chu{
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+.thanhTimKiem{
+    display: flex;
+    align-items: center;
+}
+/* Container để chứa các cột */
+.container2 {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+    width: 100%;
+}
+
+/* Định dạng các cột */
+.column2 {
+    flex: 1 1 20%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+    text-align: center;
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+.column2 img{
+    border: 7px solid #565656;
+    border-radius: 20px;
+}
+
+.container3 {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+    width: 100%;
+}
+
+/* Định dạng các cột */
+.column3 {
+    flex: 1 1 20%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+    text-align: center;
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+.column3 img{
+    border: 7px solid #565656;
+    border-radius: 20px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.container4 {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+}
+
+/* Định dạng các cột */
+.column4 {
+    flex: 1 1 50%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+.container5 {
+    display: flex;            /* Sử dụng Flexbox */
+    flex-wrap: wrap;          /* Cho phép các cột gập lại khi không đủ không gian */
+}
+
+/* Định dạng các cột */
+.column5 {
+    flex: 1 1 50%;         /* Mỗi cột sẽ chiếm 33.33% chiều rộng */
+    padding: 10px;            /* Thêm khoảng cách bên trong mỗi cột */
+    box-sizing: border-box;   /* Đảm bảo padding không ảnh hưởng đến kích thước */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cấu hình cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;       /* Khi màn hình nhỏ, mỗi cột sẽ chiếm 100% chiều rộng */
+    }
+}
+
+.Navbar{
+    background-color: blue;
+    text-align: center;
+    color: #ddd;
+    padding: 10px;
+}

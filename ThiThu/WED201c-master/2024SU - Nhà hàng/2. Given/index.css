@@ -1,0 +1,168 @@
+h1{
+    color: orange;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 40%;
+    margin: 10px;
+}
+
+.header-text{
+    margin: 30px;
+}
+
+.header-text button{
+    background-color: orange;
+    color: white;
+}
+
+/*Menu*/
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 187, 85);
+}
+
+/* Chỉnh sửa menu */
+.menu ul {
+    list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Dùng flexbox để dàn các li ngang */
+  }
+  
+  .menu ul li {
+    margin-right: 20px; /* Khoảng cách giữa các mục */
+  }
+  
+  .menu ul li a {
+    text-decoration: none; /* Bỏ gạch chân của các liên kết */
+    color: black; /* Màu chữ */
+    padding: 10px;
+    display: block; /* Đảm bảo liên kết chiếm toàn bộ diện tích của <li> */
+  }
+  
+  /*banner*/
+  .banner{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .banner img{
+    width: 100%;
+  }
+  .banner-text{
+    padding-right: 90px;
+    background-color: rgb(243, 187, 85);
+  }
+
+  .banner-text h2{
+    padding-left:70px ;
+  }
+  .banner-text-insert{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Toàn bộ form */
+form {
+    max-width: 600px; /* Chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px;
+    border-radius: 8px; /* Làm bo góc cho form */
+}
+
+/* Thẻ div chứa các trường nhập liệu */
+.banner-text-insert {
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo cột */
+    gap: 15px; /* Khoảng cách giữa các trường */
+}
+
+/* Kiểu cho mỗi trường nhập liệu */
+.form-field {
+    display: flex;
+    align-items: center; /* Canh chỉnh các phần tử con theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa label và input */
+}
+
+/* Label */
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    min-width: 120px; /* Đảm bảo label có chiều rộng cố định */
+}
+
+/* Input text */
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Xóa viền khi focus */
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển màu biên khi focus */
+    flex-grow: 1; /* Đảm bảo input chiếm hết không gian còn lại */
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff; /* Màu viền khi input được chọn */
+}
+
+/* Nút gửi */
+form input[type="submit"] {
+    background-color: #ff8800; /* Màu nền xanh cho nút */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút gửi */
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Màu nền tối hơn khi hover */
+}
+
+/*Specializing*/
+
+.Specializing-all{
+    display: flex;
+}
+.Specializing-img img{
+    width: 30%;
+}
+.Specializing-img{
+    margin-left: 30px;
+}
+.Specializing-text{
+    margin-left: 30px;
+}
+.button{
+    background-color: #ff9100; /* Màu nền */
+    color: white;               /* Màu chữ */
+    border: none;               /* Không viền */
+    padding: 10px 20px;         /* Khoảng cách giữa văn bản và viền */
+    text-align: center;         /* Căn giữa chữ */
+    text-decoration: none;      /* Không gạch chân */
+    display: inline-block;      /* Hiển thị như một phần tử nội tuyến */
+    font-size: 10px;            /* Kích thước chữ */
+    cursor: pointer;           /* Con trỏ thay đổi khi di chuột vào nút */
+    border-radius: 10px;         /* Bo góc */
+    transition: background-color 0.3s;
+    font-size: medium;
+    width: 100px;
+}
+.move{
+    display: flex;
+    justify-content: center;
+}

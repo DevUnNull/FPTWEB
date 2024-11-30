@@ -5,22 +5,23 @@
 <title>Good Staste Family </title>
 
 <!--Embed CSS here-->
+<link rel="stylesheet" href="/FPTWEB/ThiThu/WED201c-master/2024SU - Nhà hàng/2. Given/index.css">
 
 
 </head>
 
 <body>
 	
-	<div> <!--content header-->
+	<div class="header"> <!--content header-->
 	
 		<div>
 			<a href="#"><img src="images/Logo.PNG"></a>
 		</div>
 
 
-		<div>
+		<div class="header-text">
 			<form>
-				<input type="text" placeholder="Search in website">
+				<input type="text" placeholder="Search in website">		
 				<button type="submit">Search</button>
 			</form>
 
@@ -30,7 +31,7 @@
 	
 	<!----------------------------------------------------------------------------------------------------------->
 	
-	<div> <!--content Menu-->
+	<div class="menu"> <!--content Menu-->
 	
 	  <ul>
 		<li><a href="#">Home</a></li>
@@ -45,7 +46,7 @@
 	
 	<!----------------------------------------------------------------------------------------------------------->
 	
-	<div> <!--content Banner-->
+	<div class="banner"> <!--content Banner-->
 		
 		<div> <!--content left Banner-->
 		
@@ -53,32 +54,33 @@
 		
 		</div><!--Finish left Banner-->
 		
-		<div> <!--content right Banner-->
+		<div class="banner-text"> <!--content right Banner-->
 		 
 			 <h2>Your registration information</h2>
 			 
 			 <form action="#" method="post">
 			 
-			 	<div>
-			 		<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name.." />
-			 	</div>
+				<div class="banner-text-insert">
+					<div class="form-field">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.." />
+					</div>
 				
-				<div>
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+					<div class="form-field">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+					</div>
+				
+					<div class="form-field">
+						<label for="lname"> Your Phone</label>
+						<input type="text" id="phone" name="phone" placeholder="Your phone number.." />
+					</div>
+				
+					<div class="form-field">
+						<input type="submit" value="Send" />
+					</div>
+				
 				</div>
-
-				<div>
-					<label for="lname"> Yuor Phone</label>
-					<input type="text" id="phone" name="phone" placeholder="Your phone number.." />
-				</div>
-				
-				<div>
-					<input type="submit" value="Send"/>
-				</div>
-				
-				
 			  </form>
 
 		</div><!-- Finish content right Banner-->
@@ -87,40 +89,47 @@
 
 	<!----------------------------------------------------------------------------------------------------------->
 	
-	<div> <!--content Specializing in serving family dishes-->
+	<div class="Specializing"> <!--content Specializing in serving family dishes-->
 	
 		<h1>Specializing in serving family dishes</h1>
 		
-		<div> <!--content left-->
+		<div class="Specializing-all">
+			<div> <!--content left-->
 			
-			<img src="images/nhahang.png" alt="Restaurant" />
+				<img src="images/nhahang.png" alt="Restaurant" />
+				
+			</div> <!--Finish content left-->
 			
-		</div> <!--Finish content left-->
+			<div><!--content right-->
+			
+				<div class="Specializing-img">
+					
+					<img id="img1" src="images/Banner01.jpg" alt="" />
+					<img src="images/Banner03.jpg" alt="" />
+					<img src="images/Banner04.jpg" alt="" />
+									
+				</div>
+				
+				<div class="Specializing-text">
+				
+					<p>
+						You are looking for an ideal space to enjoy delicious meals and important holidays with friends or families, making sure you consider many things: price, food quality... So if you're still struggling to find a suitable place, don't ignore the name <span>Good Taste</span> RESTAURANT.
+					</p>
+					<p>
+						Located right on the front of Nguyen Van Luong street, <span>Good Taste</span> RESTAURANT opens from 9am and will be an ideal stopping place for groups of friends or families to come for their parties. Designed with a rustic architectural style, this restaurant uses earth tones and brick colors as the main theme, accompanied by a garden space with three airy sides.
+					</p>
+					
+					<div class="move">
+						<div class="button">Book Now</div>
+					</div>
+					
+					
+				</div>
+				
+			</div> <!--Finish cotent right-->
+
+		</div>
 		
-		<div><!--content right-->
-		
-			<div>
-				
-				<img src="images/Banner01.jpg" alt="" />
-				<img src="images/Banner03.jpg" alt="" />
-				<img src="images/Banner04.jpg" alt="" />
-								
-			</div>
-			
-			<div>
-			
-				<p>
-					You are looking for an ideal space to enjoy delicious meals and important holidays with friends or families, making sure you consider many things: price, food quality... So if you're still struggling to find a suitable place, don't ignore the name <span>Good Taste</span> RESTAURANT.
-				</p>
-				<p>
-					Located right on the front of Nguyen Van Luong street, <span>Good Taste</span> RESTAURANT opens from 9am and will be an ideal stopping place for groups of friends or families to come for their parties. Designed with a rustic architectural style, this restaurant uses earth tones and brick colors as the main theme, accompanied by a garden space with three airy sides.
-				</p>
-				
-				<div>Book Now</div>
-				
-			</div>
-			
-		</div> <!--Finish cotent right-->
 		
 		<div style="clear: both;"></div>
 	
