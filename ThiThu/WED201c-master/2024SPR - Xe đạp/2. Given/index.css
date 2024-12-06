@@ -1,0 +1,133 @@
+h1{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+h2{
+  color: blue;
+}
+/* Background */
+body {
+    background-color: gray;
+    margin: 0; /* Bỏ margin mặc định */
+    padding: 0; /* Bỏ padding mặc định */
+  }
+  
+/*HEADER*/
+
+  /* Container grid */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;  /* 3 cột, cột 1 và 2 chiếm 2 phần, cột 3 chiếm 1 phần */
+    grid-template-rows: 100px; /* 1 hàng duy nhất có chiều cao 100px */
+    gap: 10px; /* Khoảng cách giữa các phần tử trong grid */
+    margin-bottom: 40px;
+  }
+  
+  /* Hình ảnh trong item2 */
+  .item2 img {
+    width: 100%; /* Hình ảnh sẽ chiếm hết chiều rộng của phần tử chứa */
+    max-width: 30%; /* Hình ảnh có thể có tối đa 30% chiều rộng */
+    height: auto; /* Giữ tỷ lệ của hình ảnh */
+    object-fit: contain; /* Đảm bảo hình ảnh không bị méo khi thay đổi kích thước */
+  }
+  
+  /* Flexbox cho item3 */
+  .item3 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-top: 40px;
+}
+.button{
+    background-color: orange;
+    border: none;
+}
+  
+  /* Dãn các ul*/
+  ul {
+    list-style: none; /* Loại bỏ dấu chấm (bullet points) mặc định của danh sách */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định của thẻ <ul> */
+    display: flex; /* Áp dụng flexbox cho <ul> để các phần tử <li> sắp xếp ngang hàng (horizontal) */
+    margin-top: 50px; /* Thêm khoảng cách từ trên xuống 50px */
+  }
+  
+  ul li {
+    margin: 10px 10px; /* Thêm khoảng cách 10px giữa các phần tử <li> theo cả chiều ngang và chiều dọc */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ <a> */
+    color: black; /* Đặt màu văn bản của liên kết thành đen */
+  }
+  
+/*CONTEN*/
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+.content1{
+  background-color: aliceblue;
+  margin-left: 20px;
+}
+
+.content img{
+  width:50px;
+  margin: 40px;
+  background-color: blue  ;
+}
+.content p{
+  margin: 40px; 
+  margin-top: -80px;
+  margin-left: 100px;
+}
+
+/*bestSellers*/
+.bestSellers{
+  display: flex;
+  justify-content: center;
+}
+
+.bestSellersimg1 img{
+  width: 800px;
+}
+.bestSellersimg2 img{
+  width: 250px;
+  margin-right: 40px;
+}
+
+
+.bestSellers1{
+  margin-left: 60px;
+}
+.bestSellersimg2{
+  display: flex;
+  justify-content: center;
+
+}
+
+/*contentAccessories*/
+.contentAccessories{
+  display: flex;
+  justify-content: center;
+}
+.contentAccessoriesCon{
+  margin: 30px;
+  text-align: center;
+}
+
+.contentAccessoriesCon img{
+  width: 300px;
+  border: 1px solid #4c4747;
+}
+.contentAccessoriesConText{
+  background-color: yellow;
+}
+
+/*footer*/
+.footer{
+  background-color: blue;
+  text-align: center;
+  padding: 5px;
+}

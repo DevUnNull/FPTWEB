@@ -226,6 +226,7 @@ CSS rất linh hoạt và bạn có thể kết hợp nhiều thuộc tính vớ
     border-radius: 20px;         /* Bo góc */
     transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
   }
+  /*nếu muốn di chuyển được nút button thì mình chỉ cần tạo 1 div nữa ở ngoài rồi di chuyển div đó*/
 
 
 
@@ -699,4 +700,28 @@ form input[type="submit"]:hover {
     background-color: #0056b3; /* Màu nền tối hơn khi hover */
 }
 
+
+/*lưu ý 
+banner-text-insert chứa các thẻ đăng nhập và nút bấm
+form-field chưa các phần tử của 1 thẻ đăng nhập bao gồm nút bấm luôn*/
     /*tạo bảng đăng nhập---------------------------*/
+
+
+
+
+  /* Dãn các ul*/
+  ul {
+    list-style: none; /* Loại bỏ dấu chấm (bullet points) mặc định của danh sách */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định của thẻ <ul> */
+    display: flex; /* Áp dụng flexbox cho <ul> để các phần tử <li> sắp xếp ngang hàng (horizontal) */
+    margin-top: 50px; /* Thêm khoảng cách từ trên xuống 50px */
+  }
+  
+  ul li {
+    margin: 10px 10px; /* Thêm khoảng cách 10px giữa các phần tử <li> theo cả chiều ngang và chiều dọc */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ <a> */
+    color: black; /* Đặt màu văn bản của liên kết thành đen */
+  }

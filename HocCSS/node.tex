@@ -1,0 +1,39 @@
+/* Chỉnh sửa kiểu dáng cơ bản của button */
+.my-button { lưu ý nhớ đặt tên class vào thẳng button trong html
+  background-color: #4CAF50; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 15px 32px; /* Khoảng cách bên trong button (padding: top-bottom, left-right) */
+  font-size: 16px; /* Kích thước chữ */
+  border: none; /* Loại bỏ đường viền mặc định */
+  border-radius: 8px; /* Bo góc button */
+  cursor: pointer; /* Hiển thị con trỏ chuột như dạng bàn tay khi hover vào button */
+  transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển màu nền khi hover */
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+/* Dãn các ul*/
+ul {
+  list-style: none; /* Loại bỏ dấu chấm (bullet points) mặc định của danh sách */
+  padding: 0; /* Loại bỏ khoảng cách padding mặc định của thẻ <ul> */
+  display: flex; /* Áp dụng flexbox cho <ul> để các phần tử <li> sắp xếp ngang hàng (horizontal) */
+  margin-top: 50px; /* Thêm khoảng cách từ trên xuống 50px */
+}
+
+ul li {
+  margin: 10px 10px; /* Thêm khoảng cách 10px giữa các phần tử <li> theo cả chiều ngang và chiều dọc */
+}
+
+ul li a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ <a> */
+  color: black; /* Đặt màu văn bản của liên kết thành đen */
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+cách dùng grid
+.container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;  /* Chia thành 2 cột, cột đầu chiếm 3 phần, cột thứ hai chiếm 9 phần */
+    grid-template-rows: 100px 200px; /* 2 hàng với chiều cao 100px và 200px */
+    grid-gap: 10px;  /* Khoảng cách giữa các item */
+  }
+  

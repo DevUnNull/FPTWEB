@@ -1,0 +1,80 @@
+h2{
+    color: #0a60ea;
+    text-align: center;
+}
+
+/*logo*/
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 150px;
+}
+
+
+
+/*contentBox*/
+.containerAll {
+    display: grid;
+    grid-template-columns: 2fr 10fr;  /* Chia thành 2 cột, cột đầu chiếm 3 phần, cột thứ hai chiếm 9 phần */
+    grid-gap: 10px;  /* Khoảng cách giữa các item */
+  }
+
+.contentBox{
+    border: 1px solid #0a60ea;
+    margin-bottom: 10px;
+}
+
+.contentBox img{
+    width: 40px;
+
+}
+.contentBox h4{
+    background-color: aqua;
+}
+/*chinhr cac anh ve cung 1 hang*/
+.container2Con1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container2Con1 img{
+    border-radius: 180px;
+
+}
+.container2Con1 h4{
+    text-align: center;
+}
+.container2Con2 {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;  /* Chia thành 2 cột, cột đầu chiếm 3 phần, cột thứ hai chiếm 9 phần */
+    grid-gap: 10px;  /* Khoảng cách giữa các item */
+}
+.container2Con2-fg{
+    border: 1px solid #0a60ea;
+
+}
+.container2Con2-fg img{
+    width: 400px;
+}
+.container2Con2-fg h4{
+    color: orange;
+}
+
+.buynow {
+    background-color: #3a81fc; /* Màu nền */
+    color: white;               /* Màu chữ */
+    border: none;               /* Không viền */
+    padding: 10px 20px;         /* Khoảng cách giữa văn bản và viền */
+    text-align: center;         /* Căn giữa chữ */
+    text-decoration: none;      /* Không gạch chân */
+    display: inline-block;      /* Hiển thị như một phần tử nội tuyến */
+    font-size: 10px;            /* Kích thước chữ */
+    cursor: pointer;           /* Con trỏ thay đổi khi di chuột vào nút */
+    border-radius: 5px;         /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    margin-left: 160px;
+    margin-right: 150px;
+    margin-bottom: 5px;
+}
