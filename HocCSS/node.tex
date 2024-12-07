@@ -37,9 +37,23 @@ cách dùng grid
     grid-gap: 10px;  /* Khoảng cách giữa các item */
   }
   
+  ---------------------------------------------------------------------------------------------------------------------------------------
+cách dàn hàng dọc 
+display: flex;
+flex-direction: column;
+---------------------------------------------------------------------------------------------------------------------------------------
+thêm bảng
+border: 2px solid #ddd; /* Viền ngoài của bảng */
 
-
-  nộp bài  
+thêm bóng
+box-shadow: h-offset v-offset blur-radius spread-radius color;
+h-offset: Độ dịch chuyển theo chiều ngang (horizontally). Nếu giá trị dương, bóng sẽ nằm bên phải; nếu âm, bóng sẽ nằm bên trái.
+v-offset: Độ dịch chuyển theo chiều dọc (vertically). Nếu giá trị dương, bóng sẽ nằm bên dưới; nếu âm, bóng sẽ nằm bên trên.
+blur-radius: Độ mờ của bóng. Giá trị này xác định độ mềm mại của bóng. Giá trị lớn hơn sẽ tạo ra bóng mờ hơn.
+spread-radius: Độ lan rộng của bóng. Giá trị dương sẽ làm bóng lớn hơn, trong khi giá trị âm sẽ làm bóng nhỏ lại.
+color: Màu sắc của bóng. Có thể sử dụng các giá trị màu như tên màu, mã hex, hoặc rgba.
+---------------------------------------------------------------------------------------------------------------------------------------
+nộp bài  
   tải đề trên eos về :file1
   tạo 1 file mới  :file2
   ném hết nội dung từ file1 sang file 2 

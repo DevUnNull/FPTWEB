@@ -1,0 +1,127 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+/*logo*/
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 200px;
+}
+
+/*menu*/
+ul {
+    list-style: none; /* Loại bỏ dấu chấm (bullet points) mặc định của danh sách */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định của thẻ <ul> */
+    display: flex; /* Áp dụng flexbox cho <ul> để các phần tử <li> sắp xếp ngang hàng (horizontal) */
+    margin-top: 50px; /* Thêm khoảng cách từ trên xuống 50px */
+  }
+  
+  ul li {
+    margin: 10px 10px; /* Thêm khoảng cách 10px giữa các phần tử <li> theo cả chiều ngang và chiều dọc */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ <a> */
+    color: black; /* Đặt màu văn bản của liên kết thành đen */
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 50px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 7fr 5fr;  /* Chia thành 2 cột, cột đầu chiếm 3 phần, cột thứ hai chiếm 9 phần */
+  }
+  .anhChinh img{
+    width: 600px;
+    height: 400px;
+  }
+  .anhPhu img{
+    width: 124px;
+  }
+  .anhPhu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .anh{
+    display: flex;
+    border: 2px solid #ddd; /* Viền ngoài của bảng */
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Bóng đổ xung quanh */
+    width: 92%;
+}
+  .text{
+    border: 2px solid #ddd; /* Viền ngoài của bảng */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Bóng đổ xung quanh */
+    width: 84%;
+    text-decoration: underline;
+    
+}
+.text h2{
+    color: orange;
+}
+.chucuoi{
+    color: orange;
+}
+
+.saleAll{
+    display: flex;
+    justify-content: space-around;
+     
+}
+.saleAnh{
+    border: 2px solid #ddd; /* Viền ngoài của bảng */
+
+}
+.saleAll p{
+    text-align: center;
+}
+.saleText{
+    text-align: center;
+    background-color: orange;
+}
+
+.feedback--{
+    display: flex;
+}
+.feedback--con{
+    display: flex;
+flex-direction: column;
+margin-left: 10px;
+margin-top: 40px;
+}
+.feedbackAnhChinh img{
+    border-radius: 200px;
+    width: 300px;
+}
+.feedback--con img{
+    width: 150px;
+}
+
+
+.footer--{
+    display: flex;
+    display: grid;
+    grid-template-columns: 6fr 6fr;  /* Chia thành 2 cột, cột đầu chiếm 3 phần, cột thứ hai chiếm 9 phần */
+    background-color: blue;
+    color: white ;
+}
+
+.footer--1{
+    padding-left: 250px;
+}
+.footer--2{
+    padding-left: 300px;
+
+}
